@@ -18,15 +18,34 @@ const TaskListComponent = () => {
             console.log("TaskList componente is going unmount")
         };
     }, [tasks]);
-    
 
 
-    const changeCompleted = (id) =>{
+
+    const changeCompleted = (id) => {
         console.log("TODO: Cambiar estado de una tarea")
     }
     return (
         <div>
-            <div>
+            <div className='col-12'>
+                <div className='card'>
+                    <div className='card-header p-3'>
+                    <h5>
+                        Your Tasks:
+                    </h5>
+                    </div>
+                    <div className='card-body'style={{position:"relative", height:"400px"}} data-mdb-perfect-scrollbar="true">
+                    <table>
+                        <tr>
+                            <th scope='col'>
+                                Title
+                            </th>
+                            <th scope='col'>
+                                Description
+                            </th>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
                 <h1>
                     Your Tasks:
                 </h1>
