@@ -5,6 +5,7 @@ import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import TaskListComponent from './components/container/task_list';
 import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
 //import Reloj from './components/pure/reloj';
 
 function App() {
@@ -12,17 +13,18 @@ function App() {
     <div className="App">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" /> */}
-          {/* <Ejemplo2/>
+      {/* <Ejemplo2/>
           <MiComponenteConContexto/>
           <Ejemplo4 nombre="Martin">
             <h3>
               Contenido del props.children
             </h3>
           </Ejemplo4> */}
-          {/* <TaskListComponent/> */}
-          {/* <GreetingStyled name="Leo"/> */}
+      {/* <TaskListComponent/> */}
+      {/* <GreetingStyled name="Leo"/> */}
       {/* </header> */}
-        <TaskListComponent/>
+      <Father />
+      {/* <TaskListComponent/> */}
     </div>
   );
 }
